@@ -18,7 +18,7 @@ public class AppImpresora {
         System.out.println("Quedan " + getNumPeticiones() + " peticiones en la cola.");
         verTodo();
         imprimirTodo();
-        
+
     }
 
     public static void anyadirDocumento(String nombre_fichero){
