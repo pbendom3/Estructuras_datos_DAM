@@ -19,13 +19,17 @@ public class Ejercicio1 {
 
         for (String palabra : palabras){
             mapaPalabras.put(palabra,mapaPalabras.getOrDefault(palabra,0)+1);
-           // mapaPalabras.put(palabra,mapaPalabras.get(palabra)+1);
+//            if (mapaPalabras.containsKey(palabra)){
+//                mapaPalabras.put(palabra,mapaPalabras.get(palabra)+1);
+//            }else{
+//                mapaPalabras.put(palabra,1);
+//            }
+
         }
 
         for (Map.Entry<String,Integer> palabra : mapaPalabras.entrySet()){
             System.out.println(palabra.getKey() + ": " + palabra.getValue());
         }
-
 
     }
 }
