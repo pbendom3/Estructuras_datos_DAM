@@ -167,7 +167,7 @@ Explicación técnica...
 
 
 ## Entrega
-- [ ] **Código fuente**: [Enlace a GitHub](https://github.com/pbendom3/Estructuras_datos_DAM/blob/main/estructuras/src/main/java/org/example/equals_hashcode/Paciente.java)
+- [x] **Código fuente**: [Enlace a GitHub](https://github.com/pbendom3/Estructuras_datos_DAM/blob/main/estructuras/src/main/java/org/example/equals_hashcode/Paciente.java)
 - [ ] **Vídeo demostrativo**: [Enlace al vídeo](https://www.youtube.com/?gl=ES&hl=es)
 @pbendom3
 
