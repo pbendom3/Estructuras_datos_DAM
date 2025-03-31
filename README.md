@@ -1,6 +1,6 @@
 # Práctica: Servicio de compra online en MERCADAM
 
-![logo.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2Flogo.png)
+![img/logo.png](img/logo.png)
 
 ## ÍNDICE
 
