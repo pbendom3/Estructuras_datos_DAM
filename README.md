@@ -6,9 +6,9 @@
 
 1. [Resumen](#resumen)
 2. [Estructura de clases](#estructura-de-clases)
-   - [Diagrama de clases UML]()
-   - [Código PlantUML]()
-   - [Contenido de las clases]()
+   - [Diagrama de clases UML](https://github.com/pbendom3/Estructuras_datos_DAM/blob/main/README.md#diagrama-de-clases-uml)
+   - [Código PlantUML](https://github.com/pbendom3/Estructuras_datos_DAM/tree/main#c%C3%B3digo-plantuml)
+   - [Contenido de las clases](https://github.com/pbendom3/Estructuras_datos_DAM/tree/main#contenido-de-las-clases)
 4. [Programa principal](#programa-principal)
 5. [Pruebas](#pruebas)
 6. [Entrega](#entrega)
@@ -167,5 +167,8 @@ Explicación técnica...
 
 
 ## Entrega
+- [ ] **Código fuente**: [Enlace a GitHub](https://github.com/pbendom3/Estructuras_datos_DAM/blob/main/estructuras/src/main/java/org/example/equals_hashcode/Paciente.java)
+- [ ] **Vídeo demostrativo**: [Enlace al vídeo](https://www.youtube.com/?gl=ES&hl=es)
+@pbendom3
 
 
