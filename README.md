@@ -6,9 +6,12 @@
 
 1. [Resumen](#resumen)
 2. [Estructura de clases](#estructura-de-clases)
-3. [Programa principal](#programa-principal)
-4. [Pruebas](#pruebas)
-5. [Entrega](#entrega)
+   - [Diagrama de clases UML]()
+   - [Código PlantUML]()
+   - [Contenido de las clases]()
+4. [Programa principal](#programa-principal)
+5. [Pruebas](#pruebas)
+6. [Entrega](#entrega)
 
 
 ## Resumen
@@ -24,7 +27,7 @@ El programa sigue el paradigma de **Programación Orientada a Objeto (POO)** y s
 
 ### Diagrama de Clases UML
 
-![img/logo.png](img/logo.png)
+![img/biblio.png](img/biblio.png)
 
 ### Código PlantUML
 
@@ -79,9 +82,86 @@ Editorial "1" o-- "*" Libro : publica
 @enduml
 
 ```
+### Contenido de las clases
 
+**Clase Cliente**
 
-## Programa principal
+[Link a la clase](https://github.com/pbendom3/Estructuras_datos_DAM/blob/main/estructuras/src/main/java/org/example/equals_hashcode/Paciente.java)
+
+```` Java
+package org.example.comparadores;
+
+import lombok.Getter;
+
+import java.util.Objects;
+
+@Getter
+public class Producto {//implements Comparable<Producto>{
+
+    private String nombre;
+    private Integer precio;
+
+    public Producto (String nombre, int precio){
+        this.nombre=nombre;
+        this.precio=precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "nombre='" + nombre + '\'' +
+                ", precio=" + precio +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Producto producto = (Producto) o;
+        return precio == producto.precio && Objects.equals(nombre, producto.nombre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, precio);
+    }
+
+//    @Override
+//    public int compareTo(Producto producto) {
+//
+//        int comparacionNombre = nombre.compareTo(producto.nombre);
+//
+//        if (comparacionNombre != 0){
+//            return comparacionNombre;
+//        }
+//
+//        return precio.compareTo(producto.precio);
+//
+//    }
+
+}
+
+````
+
+Explicación técnica...
+
+## Programa principal: AppZonaClientes
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 ## Pruebas
 
@@ -89,9 +169,3 @@ Editorial "1" o-- "*" Libro : publica
 ## Entrega
 
 
-## Programa principal
-
-## Pruebas
-
-
-## Entrega
