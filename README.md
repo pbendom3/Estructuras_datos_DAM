@@ -20,7 +20,65 @@ El programa se divide en dos partes:
 
 ## Estructura de clases
 
+El programa sigue el paradigma de **Programación Orientada a Objeto (POO)** y se basa en la siguiente estructura:
 
+### Diagrama de Clases UML
+
+![img/logo.png](img/logo.png)
+
+### Código PlantUML
+
+``` PlantUML
+@startuml
+class Estudiante {
+  - nombre: String
+  - curso: String
+  - nia: int
+  - email: String
+  - librosPrestados: ArrayList<Libro>
+  + getNombre(): String
+  + getCurso(): String
+  + getNia(): int
+  + getEmail(): String
+  + anyadirLibro(Libro): void
+  + borrarLibro(Libro): void
+}
+
+class Libro {
+  - titulo: String
+  - autor: String
+  - id: String
+  - disponible: boolean
+  - estudiantePrestado: Estudiante
+  - editorial: Editorial
+  + prestar(Estudiante): Prestamo
+  + devolver(Estudiante): void
+}
+
+class Prestamo {
+  - estudiante: Estudiante
+  - libro: Libro
+  - fecha: LocalDate
+}
+
+class Editorial {
+  - nombre: String
+  - pais: String
+  - listaLibros: ArrayList<Libro>
+  + anyadirLibro(Libro): void
+  + eliminarLibro(Libro): void
+}
+
+Estudiante "1" o-- "*" Libro : librosPrestados
+Libro "1" -- "1" Estudiante : estudiantePrestado
+Libro "1" -- "1" Prestamo
+Estudiante "1" -- "*" Prestamo
+Libro "1" -- "1" Editorial : pertenece a
+Editorial "1" o-- "*" Libro : publica
+
+@enduml
+
+```
 
 
 ## Programa principal
